@@ -67,11 +67,11 @@ class email_sys:
     def particular_users_mail(self,newest_to_oldest, result):
         """ error in this part """
         try:
-            # self.texttospeech("enter mail of the user to fetch their new mails")
-            # self.user = self.speechtoxt().lower()
-            # self.user = self.user.replace(" ", "")
-            # self.user = self.user.replace("attherate", "@")
-            self.user = "khashstudioz@gmail.com"
+            self.texttospeech("enter mail of the user to fetch their new mails")
+            self.user = self.speechtoxt().lower()
+            self.user = self.user.replace(" ", "")
+            self.user = self.user.replace("attherate", "@")
+            # self.user = "khashstudioz@gmail.com"
             self.user1 = '<'+self.user+">"
 
             print(self.user1)
@@ -113,7 +113,7 @@ class email_sys:
         print()
         print("*****---------- receive mail ----------*****")
 
-        # self.texttospeech("A quick disclaimer you will be listening mails from newest to oldest")
+        self.texttospeech("A quick disclaimer you will be listening mails from newest to oldest")
         print("_____Disclaimer______")
         print(newest_to_oldest)
         for i in range(len(self.newest_to_oldest)):
@@ -163,11 +163,11 @@ class email_sys:
             i=True
             while i:
                 try:
-                    # self.texttospeech("To listen all of them say all mail or to listen mail from a particular user say get mail")
+                    self.texttospeech("To listen all of them say all mail or to listen mail from a particular user say get mail")
                     print("To listen all of them say all mail or to listen mail from a particular user say get mail")
 
-                    # ch = self.speechtotext().lower()
-                    ch="get mail"
+                    ch = self.speechtotext().lower()
+                    # ch="get mail"
                     if ch == "all mail" or ch=="all the mails" or ch=="all mails":
                         i=False
                         self.receive_unseen_mail(self.newest_to_oldest)
@@ -286,17 +286,17 @@ class email_sys:
         print("*****---------- menu ----------*****")
         print("Welcome to voice based email for blind!")
         mytext = 'Welcome to voice based email for blind'
-        # self.texttospeech(mytext)
+        self.texttospeech(mytext)
         i=True
         while i:
             try:
-                # choices = "say introduction if you are a new user or say send mail if you wanna send an email"
-                # self.texttospeech("say introduction if you are a new user or say send mail if you wanna send an email")
-                # self.texttospeech(" or say read mail if you wanna read an email")
+                choices = "say introduction if you are a new user or say send mail if you wanna send an email"
+                self.texttospeech("say introduction if you are a new user or say send mail if you wanna send an email")
+                self.texttospeech(" or say read mail if you wanna read an email")
                 mixer.Sound("beep.mp3").play()
-                # ch = self.speechtotext().lower()
-                print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
-                ch = "read mail"
+                ch = self.speechtotext().lower()
+                # print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+                # ch = "read mail"
                 if ch == "send mail" or ch == "send a mail":
                     self.voicebasedforblind()
 
