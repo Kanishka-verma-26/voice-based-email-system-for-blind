@@ -1,0 +1,41 @@
+Kanishka Verma <kanishka@hashstudioz.com>
+Document from Kanishka Verma
+README.txt
+
+-- 
+*DISCLAIMER*: This e-mail is the property of *HashStudioz Technologies* 
+*Pvt. Ltd*. It is intended only for the person or entity to which it is 
+addressed and may contain information that is privileged, confidential, or 
+otherwise protected from disclosure. Distribution or copying of this 
+e-mail, or the information contained herein, to anyone other than the 
+intended recipient is prohibited.
+
+**********
+Kanishka Verma <kanishka@hashstudioz.com>
+Document from Kanishka Verma
+-----------------------------------------------------------------------------------------------------------
+Title: voice based email for blind
+-----------------------------------------------------------------------------------------------------------
+
+
+Requirements: Spyder-Python(3.7)
+
+
+The package contains BasePaper,Document,PPT,ScreenShot,WebShot,Video and SourceCode.
+
+1. Open SourceCode Folder
+
+2. Select main.py 
+
+3.Run the source code using F5
+
+4.Execute it
+**********
+khashstudioz@gmail.com
+subject
+this is the body of the mail.
+**********
+khashstudioz@gmail.com
+subject
+this is the body of the mail.
+**********
